@@ -1,5 +1,12 @@
 # ptool
 
+```shell
+
+# Cross compile
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-w -s"
+
+```
+
 自用的 PT ([Private trackers][]) 网站和 [BitTorrent][] 客户端辅助工具([Github](https://github.com/sagan/ptool))。提供全自动刷流(brush)、自动辅种(使用 IYUU 或 Reseed 等接口)、BT 客户端控制等功能。
 
 TOC
